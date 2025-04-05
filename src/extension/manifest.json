@@ -1,0 +1,33 @@
+{
+    "manifest_version": 3,
+    "name": "Chess Analysis Engine",
+    "version": "1.0",
+    "description": "A chess analysis engine that helps visualize best moves on chess websites",
+    "permissions": [
+        "activeTab"
+    ],
+    "host_permissions": [
+        "http://localhost:5001/"
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://*.chess.com/*"
+            ],
+            "js": [
+                "chess.min.js",
+                "content.js"
+            ],
+            "css": ["styles.css"]
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": ["styles.css"],
+            "matches": ["https://*.chess.com/*"]
+        }
+    ]
+} 

@@ -1,0 +1,87 @@
+.chess-arrow {
+    position: absolute;
+    pointer-events: none;
+    z-index: 1000;
+}
+
+.chess-arrow-best {
+    stroke: rgba(0, 255, 0, 0.7);
+    stroke-width: 8px;
+}
+
+.chess-arrow-good {
+    stroke: rgba(0, 150, 255, 0.7);
+    stroke-width: 6px;
+}
+
+.chess-arrow-interesting {
+    stroke: rgba(255, 150, 0, 0.7);
+    stroke-width: 4px;
+}
+
+.move-score {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 12px;
+    pointer-events: none;
+}
+
+.chess-analysis-container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    z-index: 9999;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.analyze-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #2f3542;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    z-index: 9999;
+    transition: background-color 0.2s;
+}
+
+.analyze-button:hover {
+    background-color: #3f4658;
+}
+
+.analyze-button:active {
+    background-color: #1f242e;
+}
+
+/* Position the analysis display below the button */
+.chess-analysis-container:not(:first-child) {
+    top: 50px;
+}
+
+.analysis-display {
+    position: fixed;
+    top: 60px;
+    right: 10px;
+    padding: 10px;
+    background-color: #2c2c2c;
+    color: white;
+    border-radius: 4px;
+    z-index: 9999;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+} 
