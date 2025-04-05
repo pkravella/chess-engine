@@ -1,6 +1,6 @@
 # Chess Engine Browser Extension
 
-A Python-based chess engine that can be used as a browser extension for chess websites like lichess.org and chess.com. The engine analyzes positions and suggests the best moves using visual arrows.
+A Python-based chess engine that can be used as a browser extension for chess.com. The engine analyzes positions and suggests the best move.
 
 ## Project Structure
 
